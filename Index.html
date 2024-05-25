@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo de la Universidad" id="logo">
+        <h1>Convertidor de Divisas - Tecnologico de Estudios Superiores de Ecatepec</h1>
+    </header>
+    <div class="container">
+        <form id="currency-form">
+            <div class="form-group">
+                <label for="amount">Cantidad:</label>
+                <input type="number" id="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="from-currency">De:</label>
+                <select id="from-currency" required></select>
+            </div>
+            <div class="form-group">
+                <label for="to-currency">A:</label>
+                <select id="to-currency" required></select>
+            </div>
+            <button type="submit">Convertir</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
